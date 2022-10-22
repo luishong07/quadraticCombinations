@@ -18,14 +18,15 @@ for(let i = 0; i < array.length; i++){
             
             // let output = `${a!=0 ? a + 'x^2' :"" } ${b !=0 ? b + "x" : ""} ${c !=0 ? c : ""}`
             if(a > 0 && b > 0 && c > 0){//all positives
+
                 if(a == 1 || b ==1){
                     console.log(`${a == 1 ? "": a }x^2+${b == 1 ? "":b}x+${c}`)    
                     // console.log("a=",a,"b=", b,"c=", c)
                     // console.log("here")
                 }
                 
-                else{
-                    console.log(`${a}x^2+${b}x${c}`)
+                else{ 
+                    console.log(`${a}x^2+${b}x+${c}`)
 
                 }
             }
@@ -38,6 +39,10 @@ for(let i = 0; i < array.length; i++){
 
                 }
             }
+            if(a == 0 && b > 0 && c > 0){
+
+            }
+            
             else{
                 console.log(a, b, c)
 
